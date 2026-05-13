@@ -1,0 +1,49 @@
+{
+  "businessName": "JOVIKA FOODS",
+  "industry": "Food Manufacturing",
+  "tone": "warm, trustworthy, quality-focused",
+  "tagline": "Crafting Quality Food Products for Nigerian Homes",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to JOVIKA FOODS - Your Trusted Partner in Quality Food Manufacturing. From our facility in Makurdi, we deliver premium food products that bring taste, nutrition, and satisfaction to homes across Nigeria. Experience the difference that quality ingredients and careful production make.",
+      "imagePrompt": "Photorealistic wide shot of a modern Nigerian food manufacturing facility in Makurdi, clean production floor with stainless steel equipment, workers in white hygiene uniforms and hairnets carefully packaging food products, bright natural lighting streaming through large windows, professional food safety standards visible, warm and inviting atmosphere, shelves of finished packaged products in the background, Nigerian context",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "JOVIKA FOODS is a leading food manufacturing company based in Makurdi, Benue State - Nigeria's food basket. We specialize in producing high-quality food products using the finest locally-sourced ingredients and modern manufacturing processes. Our commitment to excellence, food safety, and customer satisfaction has made us a trusted name in Nigerian households. Every product that leaves our facility at C34/35 Hudco Quarters North Bank Makurdi meets rigorous quality standards, ensuring that families across Nigeria enjoy wholesome, nutritious, and delicious food products they can trust.",
+      "imagePrompt": "Photorealistic image of Benue State farmlands with golden grain fields stretching to the horizon, farmers harvesting crops under blue African skies, traditional storage silos alongside modern food processing buildings, the convergence of agricultural heritage and modern food manufacturing, warm sunset lighting, celebrating Nigeria's food basket, documentary photography style",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Products & Services",
+      "copy": "At JOVIKA FOODS, we manufacture a diverse range of quality food products designed to meet the needs of modern Nigerian families. Our product line includes carefully processed grains, flours, seasonings, and packaged food items - all produced under strict hygiene conditions. We also offer bulk supply services to retailers, distributors, and institutions across Nigeria. Our manufacturing capabilities include custom formulations, private labeling, and contract manufacturing for businesses looking for reliable production partners. Every product is made with premium ingredients, modern equipment, and a deep commitment to food safety and quality assurance.",
+      "imagePrompt": "Photorealistic flat lay photography of various packaged JOVIKA FOODS products arranged artistically on a clean white surface, colorful professional packaging designs, bags of flour, bottles of seasonings, packaged grains, all products showing clear labels and nutritional information, bright studio lighting creating soft shadows, commercial food photography style, Nigerian brand aesthetic",
+      "layout": "grid"
+    },
+    {
+      "id": "quality",
+      "name": "Quality Assurance",
+      "copy": "Quality is the foundation of everything we do at JOVIKA FOODS. Our manufacturing facility follows international food safety standards including proper hygiene protocols, regular equipment maintenance, and comprehensive quality testing at every production stage. We source our raw materials from trusted suppliers, conduct thorough inspections, and maintain strict temperature and storage controls. Our team is trained in food safety practices and HACCP principles to ensure every product meets our high standards before reaching your table. When you choose JOVIKA FOODS, you're choosing products manufactured with integrity, care, and unwavering commitment to excellence.",
+      "imagePrompt": "Photorealistic close-up of a quality control laboratory in a Nigerian food manufacturing plant, female lab technician in white coat examining food samples under microscope, testing equipment and colorful chemical indicators on clean countertops, clipboard with quality checklist, certificates on wall, sterile environment, professional scientific atmosphere, natural window lighting",
+      "layout": "split"
+    },
+    {
+      "id": "contact",
+      "name": "Contact Us",
+      "copy": "Ready to experience the JOVIKA FOODS difference? Whether you're a retailer looking for quality products, a business seeking manufacturing partnership, or a customer wanting to learn more about our offerings, we're here to help. Visit our facility in Makurdi or reach out through any of our contact channels. Our team is ready to discuss your needs, answer your questions, and show you why JOVIKA FOODS is the right choice for quality food manufacturing in Nigeria.",
+      "imagePrompt": "Photorealistic image of JOVIKA FOODS facility entrance in Makurdi, modern industrial building with company signage, clean paved compound, delivery trucks being loaded with products, green landscaping around the building, welcoming reception area visible through glass doors, blue Nigerian sky, professional commercial photography, showing accessibility and professionalism",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "+234 816 582 4971",
+    "email": "info@jovikafoods.com",
+    "address": "C34/35 Hudco Quarters North Bank, Makurdi, Benue State, Nigeria",
+    "whatsapp": "https://wa.me/2348165824971"
+  }
+}
