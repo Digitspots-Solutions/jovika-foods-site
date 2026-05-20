@@ -1,48 +1,41 @@
 {
-  "businessName": "JOVIKA FOODS",
-  "industry": "Food Manufacturing",
-  "tone": "warm, trustworthy, quality-focused",
-  "tagline": "Crafting Quality Food Products for Nigerian Homes",
+  "businessName": "WM Logic Family Office Limited",
+  "industry": "Financial Services",
+  "tone": "formal",
+  "tagline": "Heritage Wealth Management & Foreign Exchange Solutions",
   "sections": [
     {
       "id": "hero",
       "name": "Hero",
-      "copy": "Welcome to JOVIKA FOODS - Your Trusted Partner in Quality Food Manufacturing. From our facility in Makurdi, we deliver premium food products that bring taste, nutrition, and satisfaction to homes across Nigeria. Experience the difference that quality ingredients and careful production make.",
-      "imagePrompt": "Photorealistic wide shot of a modern Nigerian food manufacturing facility in Makurdi, clean production floor with stainless steel equipment, workers in white hygiene uniforms and hairnets carefully packaging food products, bright natural lighting streaming through large windows, professional food safety standards visible, warm and inviting atmosphere, shelves of finished packaged products in the background, Nigerian context",
+      "copy": "WM Logic Family Office Limited - Your Trusted Partner in Wealth Management and Foreign Exchange. Operating from the heart of Makurdi, we provide professional bureau de change services and comprehensive family office solutions. Building financial legacies across Benue State and beyond.",
+      "imagePrompt": "Professional Nigerian financial office interior with modern glass desk, executive leather chairs, financial charts on wall-mounted screens, warm ambient lighting, view of Makurdi cityscape through floor-to-ceiling windows, sophisticated and trustworthy atmosphere, photorealistic, high-end corporate photography",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "JOVIKA FOODS is a leading food manufacturing company based in Makurdi, Benue State - Nigeria's food basket. We specialize in producing high-quality food products using the finest locally-sourced ingredients and modern manufacturing processes. Our commitment to excellence, food safety, and customer satisfaction has made us a trusted name in Nigerian households. Every product that leaves our facility at C34/35 Hudco Quarters North Bank Makurdi meets rigorous quality standards, ensuring that families across Nigeria enjoy wholesome, nutritious, and delicious food products they can trust.",
-      "imagePrompt": "Photorealistic image of Benue State farmlands with golden grain fields stretching to the horizon, farmers harvesting crops under blue African skies, traditional storage silos alongside modern food processing buildings, the convergence of agricultural heritage and modern food manufacturing, warm sunset lighting, celebrating Nigeria's food basket, documentary photography style",
+      "copy": "WM Logic Family Office Limited, also operating as WM Logic Heritage Wealth Co, is a premier financial services institution based in Makurdi, Benue State. As a licensed bureau de change operator, we specialize in foreign exchange transactions while providing comprehensive family office services to high-net-worth individuals and families across Nigeria.\n\nOur commitment is to preserve and grow generational wealth through strategic financial planning, transparent currency exchange services, and personalized wealth management solutions. With our deep understanding of the Nigerian financial landscape and global currency markets, we serve as your dedicated partner in achieving financial security and prosperity.\n\nLocated at C34/35 Hudco Quarters North Bank, Makurdi, we combine international financial standards with local market expertise to deliver exceptional service to our valued clients.",
+      "imagePrompt": "Modern Nigerian financial services office in Makurdi, professional African business team reviewing documents around conference table, Lagos and Abuja skyline artwork on walls, Nigerian currency notes and international currencies displayed professionally, natural lighting, corporate professionalism, photorealistic business photography",
       "layout": "split"
     },
     {
       "id": "services",
-      "name": "Our Products & Services",
-      "copy": "At JOVIKA FOODS, we manufacture a diverse range of quality food products designed to meet the needs of modern Nigerian families. Our product line includes carefully processed grains, flours, seasonings, and packaged food items - all produced under strict hygiene conditions. We also offer bulk supply services to retailers, distributors, and institutions across Nigeria. Our manufacturing capabilities include custom formulations, private labeling, and contract manufacturing for businesses looking for reliable production partners. Every product is made with premium ingredients, modern equipment, and a deep commitment to food safety and quality assurance.",
-      "imagePrompt": "Photorealistic flat lay photography of various packaged JOVIKA FOODS products arranged artistically on a clean white surface, colorful professional packaging designs, bags of flour, bottles of seasonings, packaged grains, all products showing clear labels and nutritional information, bright studio lighting creating soft shadows, commercial food photography style, Nigerian brand aesthetic",
+      "name": "Our Services",
+      "copy": "**Bureau de Change Services**\nWe provide competitive rates for buying and selling major foreign currencies including USD, GBP, EUR, and other international currencies. Our transactions are fast, secure, and fully compliant with Central Bank of Nigeria regulations.\n\n**Family Office Management**\nComprehensive wealth management services tailored for affluent families, including investment advisory, estate planning, and multi-generational wealth preservation strategies.\n\n**Foreign Exchange Advisory**\nExpert guidance on currency market trends, hedging strategies, and optimal timing for international transactions to maximize value for our clients.\n\n**Corporate FX Solutions**\nSpecialized foreign exchange services for businesses engaged in international trade, including bulk transactions and corporate rate negotiations.\n\n**Wealth Preservation Planning**\nStrategic planning to protect and grow your assets across market cycles, ensuring your family's financial security for generations to come.\n\n**Investment Consultation**\nPersonalized investment advice aligned with your financial goals, risk tolerance, and long-term wealth objectives.",
+      "imagePrompt": "Split screen composition: left side shows hands exchanging international currency notes (USD, EUR, GBP) on polished wooden desk with Nigerian naira in background; right side shows diverse Nigerian professionals analyzing financial charts on tablet and laptop, modern Makurdi office setting, professional lighting, photorealistic financial services imagery",
       "layout": "grid"
-    },
-    {
-      "id": "quality",
-      "name": "Quality Assurance",
-      "copy": "Quality is the foundation of everything we do at JOVIKA FOODS. Our manufacturing facility follows international food safety standards including proper hygiene protocols, regular equipment maintenance, and comprehensive quality testing at every production stage. We source our raw materials from trusted suppliers, conduct thorough inspections, and maintain strict temperature and storage controls. Our team is trained in food safety practices and HACCP principles to ensure every product meets our high standards before reaching your table. When you choose JOVIKA FOODS, you're choosing products manufactured with integrity, care, and unwavering commitment to excellence.",
-      "imagePrompt": "Photorealistic close-up of a quality control laboratory in a Nigerian food manufacturing plant, female lab technician in white coat examining food samples under microscope, testing equipment and colorful chemical indicators on clean countertops, clipboard with quality checklist, certificates on wall, sterile environment, professional scientific atmosphere, natural window lighting",
-      "layout": "split"
     },
     {
       "id": "contact",
       "name": "Contact Us",
-      "copy": "Ready to experience the JOVIKA FOODS difference? Whether you're a retailer looking for quality products, a business seeking manufacturing partnership, or a customer wanting to learn more about our offerings, we're here to help. Visit our facility in Makurdi or reach out through any of our contact channels. Our team is ready to discuss your needs, answer your questions, and show you why JOVIKA FOODS is the right choice for quality food manufacturing in Nigeria.",
-      "imagePrompt": "Photorealistic image of JOVIKA FOODS facility entrance in Makurdi, modern industrial building with company signage, clean paved compound, delivery trucks being loaded with products, green landscaping around the building, welcoming reception area visible through glass doors, blue Nigerian sky, professional commercial photography, showing accessibility and professionalism",
+      "copy": "**Visit Our Office**\nC34/35 Hudco Quarters North Bank\nMakurdi, Benue State, Nigeria\n\n**Call Us**\n+234 816 582 4971\n\n**Business Hours**\nMonday - Friday: 8:00 AM - 5:00 PM\nSaturday: 9:00 AM - 2:00 PM\nSunday: Closed\n\nFor immediate assistance, reach us via WhatsApp. We respond promptly to all inquiries regarding foreign exchange rates, wealth management consultations, and family office services.\n\n**Why Choose WM Logic Family Office?**\n✓ Licensed and regulated bureau de change operator\n✓ Competitive foreign exchange rates\n✓ Personalized wealth management approach\n✓ Transparent and secure transactions\n✓ Deep expertise in Nigerian and international markets\n✓ Convenient Makurdi location\n\nSchedule your confidential consultation today and discover how we can help secure your financial future.",
+      "imagePrompt": "Professional Nigerian office reception area in Makurdi, elegant wooden desk with receptionist, comfortable leather seating area, company logo prominently displayed, financial publications on coffee table, warm welcoming lighting, map of Benue State on wall, contemporary African business decor, photorealistic corporate photography",
       "layout": "centered"
     }
   ],
   "contact": {
-    "phone": "+234 816 582 4971",
-    "email": "info@jovikafoods.com",
+    "phone": "+2348165824971",
+    "email": "info@wmlogic.org",
     "address": "C34/35 Hudco Quarters North Bank, Makurdi, Benue State, Nigeria",
     "whatsapp": "https://wa.me/2348165824971"
   }
