@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JOVIKA FOODS - Crafting Quality Food Products for Nigerian Homes</title>
+    <title>WM Logic Family Office Limited - Heritage Wealth Management & Foreign Exchange Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: #361707;
-            --color-accent: #e55616;
-            --color-bg: #FDF2EC;
-            --color-text: #3C1008;
-            --color-surface: #592913;
-            --color-secondary-accent: #477335;
-            --font-display: 'Fraunces', serif;
-            --font-body: 'Karla', sans-serif;
-            --border-radius: 14px;
+            --color-primary: #0f3343;
+            --color-accent: #e9774a;
+            --color-bg: #FDF6F4;
+            --color-text: #0A2238;
+            --color-surface: #152d53;
+            --color-secondary-accent: #1f765c;
+            --font-display: 'DM Serif Display', serif;
+            --font-body: 'Nunito Sans', sans-serif;
+            --border-radius: 16px;
         }
 
         * {
@@ -33,14 +33,14 @@
         body {
             font-family: var(--font-body);
             color: var(--color-text);
-            background-color: var(--color-bg);
-            line-height: 1.7;
+            background: var(--color-bg);
+            line-height: 1.6;
             overflow-x: hidden;
         }
 
         h1, h2, h3, h4 {
             font-family: var(--font-display);
-            font-weight: 700;
+            font-weight: 400;
             line-height: 1.2;
         }
 
@@ -59,40 +59,40 @@
         nav {
             position: sticky;
             top: 0;
-            background: rgba(253, 242, 236, 0.95);
+            background: rgba(253, 246, 244, 0.95);
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(54, 23, 7, 0.05);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(10, 34, 56, 0.08);
         }
 
-        .nav-container {
+        nav .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .logo {
+        nav .logo {
             font-family: var(--font-display);
             font-size: 1.5rem;
-            font-weight: 700;
             color: var(--color-primary);
-            text-decoration: none;
+            font-weight: 400;
         }
 
         .nav-links {
             display: flex;
             list-style: none;
             gap: 2rem;
+            align-items: center;
         }
 
         .nav-links a {
             text-decoration: none;
             color: var(--color-text);
-            font-weight: 500;
+            font-weight: 600;
             transition: color 0.3s ease;
         }
 
@@ -100,11 +100,13 @@
             color: var(--color-accent);
         }
 
+        /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
             cursor: pointer;
             gap: 4px;
+            z-index: 1001;
         }
 
         .mobile-menu-btn span {
@@ -127,6 +129,7 @@
             transform: rotate(-45deg) translate(6px, -6px);
         }
 
+        /* Mobile Menu */
         .mobile-menu {
             position: fixed;
             top: 70px;
@@ -134,7 +137,7 @@
             width: 300px;
             height: calc(100vh - 70px);
             background: var(--color-bg);
-            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
             transition: right 0.3s ease;
             z-index: 999;
             padding: 2rem;
@@ -156,7 +159,7 @@
             text-decoration: none;
             color: var(--color-text);
             font-size: 1.1rem;
-            font-weight: 500;
+            font-weight: 600;
             transition: color 0.3s ease;
             display: block;
             padding: 0.5rem 0;
@@ -173,33 +176,28 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            padding: 80px 2rem;
             overflow: hidden;
             animation: fadeUp 0.6s ease forwards;
         }
 
-        .hero-bg {
+        #hero::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.pexels.com/photos/7511752/pexels-photo-7511752.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center/cover;
             z-index: 1;
         }
 
-        .hero-bg img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .hero-overlay {
+        #hero::after {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            right: 0;
+            bottom: 0;
             background: rgba(0, 0, 0, 0.55);
             z-index: 2;
         }
@@ -207,13 +205,15 @@
         .hero-content {
             position: relative;
             z-index: 3;
-            max-width: 900px;
+            text-align: center;
             color: white;
+            padding: 2rem;
+            max-width: 900px;
         }
 
         .hero-content h1 {
             font-size: 3.5rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             color: white;
         }
 
@@ -228,28 +228,56 @@
             background: var(--color-accent);
             color: white;
             padding: 1rem 2.5rem;
-            text-decoration: none;
             border-radius: var(--border-radius);
-            font-weight: 500;
+            text-decoration: none;
+            font-weight: 600;
             font-size: 1.1rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(233, 119, 74, 0.3);
         }
 
         .cta-button:hover {
+            background: #d66839;
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(229, 86, 22, 0.3);
+            box-shadow: 0 6px 20px rgba(233, 119, 74, 0.4);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 2rem;
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        section:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        section:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        section:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--color-primary);
         }
 
         /* About Section */
         #about {
-            padding: 80px 2rem;
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.1s;
+            background: white;
         }
 
-        .about-container {
-            max-width: 1400px;
-            margin: 0 auto;
+        .about-split {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
@@ -257,9 +285,9 @@
         }
 
         .about-image {
-            width: 100%;
             border-radius: var(--border-radius);
             overflow: hidden;
+            box-shadow: 0 10px 40px rgba(15, 51, 67, 0.15);
         }
 
         .about-image img {
@@ -269,43 +297,15 @@
             display: block;
         }
 
-        .about-content h2 {
-            font-size: 2.5rem;
-            color: var(--color-primary);
+        .about-text p {
             margin-bottom: 1.5rem;
-        }
-
-        .about-content p {
-            font-size: 1.1rem;
-            line-height: 1.8;
+            font-size: 1.05rem;
+            color: var(--color-text);
         }
 
         /* Services Section */
         #services {
-            padding: 80px 2rem;
-            background: white;
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.2s;
-        }
-
-        .services-container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .services-container h2 {
-            font-size: 2.5rem;
-            color: var(--color-primary);
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-
-        .services-intro {
-            max-width: 800px;
-            margin: 0 auto 3rem;
-            text-align: center;
-            font-size: 1.1rem;
-            line-height: 1.8;
+            background: var(--color-bg);
         }
 
         .services-grid {
@@ -316,154 +316,85 @@
         }
 
         .service-card {
-            background: var(--color-bg);
+            background: white;
             padding: 2rem;
             border-radius: var(--border-radius);
-            border-left: 4px solid var(--color-accent);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 20px rgba(15, 51, 67, 0.1);
+            transition: all 0.3s ease;
         }
 
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(54, 23, 7, 0.1);
+            box-shadow: 0 8px 30px rgba(15, 51, 67, 0.15);
         }
 
         .service-card h3 {
             font-size: 1.5rem;
-            color: var(--color-surface);
             margin-bottom: 1rem;
+            color: var(--color-primary);
         }
 
         .service-card p {
+            font-size: 1rem;
             line-height: 1.7;
-        }
-
-        /* Quality Section */
-        #quality {
-            padding: 80px 2rem;
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.3s;
-        }
-
-        .quality-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .quality-content {
-            order: 2;
-        }
-
-        .quality-image {
-            order: 1;
-            width: 100%;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-        }
-
-        .quality-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .quality-content h2 {
-            font-size: 2.5rem;
-            color: var(--color-primary);
-            margin-bottom: 1.5rem;
-        }
-
-        .quality-content p {
-            font-size: 1.1rem;
-            line-height: 1.8;
         }
 
         /* Contact Section */
         #contact {
-            padding: 80px 2rem;
             background: var(--color-surface);
             color: white;
-            text-align: center;
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.4s;
         }
 
-        .contact-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .contact-container h2 {
-            font-size: 2.5rem;
+        #contact h2 {
             color: white;
-            margin-bottom: 1.5rem;
         }
 
-        .contact-container p {
-            font-size: 1.1rem;
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .contact-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--color-accent);
+        }
+
+        .contact-item p {
+            font-size: 1.05rem;
             line-height: 1.8;
-            margin-bottom: 3rem;
-        }
-
-        .contact-details {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .contact-item {
-            font-size: 1.1rem;
         }
 
         .contact-item a {
-            color: var(--color-accent);
+            color: white;
             text-decoration: none;
-            transition: opacity 0.3s ease;
+            transition: color 0.3s ease;
         }
 
         .contact-item a:hover {
-            opacity: 0.8;
+            color: var(--color-accent);
         }
 
-        .contact-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
+        .features-list {
+            text-align: left;
+            max-width: 600px;
+            margin: 3rem auto;
         }
 
-        .contact-btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            border-radius: var(--border-radius);
-            font-weight: 500;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .features-list p {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
         }
 
-        .contact-btn.primary {
-            background: var(--color-accent);
-            color: white;
-        }
-
-        .contact-btn.whatsapp {
-            background: #25D366;
-            color: white;
-        }
-
-        .contact-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        /* WhatsApp Float Button */
+        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -476,16 +407,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            text-decoration: none;
-            font-size: 2rem;
+            font-size: 30px;
             box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
             z-index: 999;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            transition: all 0.3s ease;
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
         }
 
         /* Footer */
@@ -501,91 +432,68 @@
         }
 
         /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            section {
+                padding: 60px 1.5rem;
+            }
+        }
+
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-            
+
             .mobile-menu-btn {
                 display: flex;
             }
 
             .hero-content h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
 
             .hero-content p {
                 font-size: 1rem;
             }
 
-            #hero,
-            #about,
-            #services,
-            #quality,
-            #contact {
-                padding: 48px 1.5rem;
+            section {
+                padding: 48px 1rem;
             }
 
-            .about-container,
-            .quality-container {
+            section h2 {
+                font-size: 2rem;
+            }
+
+            .about-split {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
 
-            .quality-content {
-                order: 1;
-            }
-
-            .quality-image {
-                order: 2;
-            }
-
-            .about-content h2,
-            .quality-content h2,
-            .services-container h2,
-            .contact-container h2 {
-                font-size: 2rem;
-            }
-
             .services-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .contact-buttons {
-                flex-direction: column;
-                align-items: stretch;
             }
 
             .whatsapp-float {
                 width: 50px;
                 height: 50px;
-                font-size: 1.5rem;
+                font-size: 24px;
                 bottom: 20px;
                 right: 20px;
-            }
-        }
-
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .hero-content h1 {
-                font-size: 3rem;
-            }
-
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
-        <div class="nav-container">
-            <a href="#hero" class="logo">JOVIKA FOODS</a>
+        <div class="container">
+            <div class="logo">WM Logic</div>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Products</a></li>
-                <li><a href="#quality">Quality</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
@@ -596,111 +504,120 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu">
         <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Products</a></li>
-            <li><a href="#quality">Quality</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
-    <!-- Hero Section -->
     <section id="hero">
-        <div class="hero-bg">
-            <img src="https://images.pexels.com/photos/31291000/pexels-photo-31291000.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="JOVIKA FOODS Manufacturing Facility">
-        </div>
-        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>JOVIKA FOODS</h1>
-            <p>Welcome to JOVIKA FOODS - Your Trusted Partner in Quality Food Manufacturing. From our facility in Makurdi, we deliver premium food products that bring taste, nutrition, and satisfaction to homes across Nigeria. Experience the difference that quality ingredients and careful production make.</p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
+            <h1>WM Logic Family Office Limited</h1>
+            <p>Your Trusted Partner in Wealth Management and Foreign Exchange. Operating from the heart of Makurdi, we provide professional bureau de change services and comprehensive family office solutions. Building financial legacies across Benue State and beyond.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="https://images.pexels.com/photos/11733145/pexels-photo-11733145.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Benue State Farmlands">
-            </div>
-            <div class="about-content">
-                <h2>About Us</h2>
-                <p>JOVIKA FOODS is a leading food manufacturing company based in Makurdi, Benue State - Nigeria's food basket. We specialize in producing high-quality food products using the finest locally-sourced ingredients and modern manufacturing processes. Our commitment to excellence, food safety, and customer satisfaction has made us a trusted name in Nigerian households. Every product that leaves our facility at C34/35 Hudco Quarters North Bank Makurdi meets rigorous quality standards, ensuring that families across Nigeria enjoy wholesome, nutritious, and delicious food products they can trust.</p>
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-split">
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/33644177/pexels-photo-33644177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="WM Logic Family Office Team" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <p>WM Logic Family Office Limited, also operating as WM Logic Heritage Wealth Co, is a premier financial services institution based in Makurdi, Benue State. As a licensed bureau de change operator, we specialize in foreign exchange transactions while providing comprehensive family office services to high-net-worth individuals and families across Nigeria.</p>
+                    <p>Our commitment is to preserve and grow generational wealth through strategic financial planning, transparent currency exchange services, and personalized wealth management solutions. With our deep understanding of the Nigerian financial landscape and global currency markets, we serve as your dedicated partner in achieving financial security and prosperity.</p>
+                    <p>Located at C34/35 Hudco Quarters North Bank, Makurdi, we combine international financial standards with local market expertise to deliver exceptional service to our valued clients.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services">
-        <div class="services-container">
-            <h2>Our Products & Services</h2>
-            <p class="services-intro">At JOVIKA FOODS, we manufacture a diverse range of quality food products designed to meet the needs of modern Nigerian families. Our product line includes carefully processed grains, flours, seasonings, and packaged food items - all produced under strict hygiene conditions. We also offer bulk supply services to retailers, distributors, and institutions across Nigeria. Our manufacturing capabilities include custom formulations, private labeling, and contract manufacturing for businesses looking for reliable production partners. Every product is made with premium ingredients, modern equipment, and a deep commitment to food safety and quality assurance.</p>
+        <div class="container">
+            <h2>Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Premium Food Products</h3>
-                    <p>Carefully processed grains, flours, seasonings, and packaged food items manufactured under strict hygiene conditions for Nigerian families.</p>
+                    <h3>Bureau de Change Services</h3>
+                    <p>We provide competitive rates for buying and selling major foreign currencies including USD, GBP, EUR, and other international currencies. Our transactions are fast, secure, and fully compliant with Central Bank of Nigeria regulations.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Bulk Supply Services</h3>
-                    <p>Reliable supply partnerships with retailers, distributors, and institutions across Nigeria, ensuring consistent availability of quality products.</p>
+                    <h3>Family Office Management</h3>
+                    <p>Comprehensive wealth management services tailored for affluent families, including investment advisory, estate planning, and multi-generational wealth preservation strategies.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Custom Manufacturing</h3>
-                    <p>Custom formulations, private labeling, and contract manufacturing services for businesses seeking trusted production partners.</p>
+                    <h3>Foreign Exchange Advisory</h3>
+                    <p>Expert guidance on currency market trends, hedging strategies, and optimal timing for international transactions to maximize value for our clients.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Corporate FX Solutions</h3>
+                    <p>Specialized foreign exchange services for businesses engaged in international trade, including bulk transactions and corporate rate negotiations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Wealth Preservation Planning</h3>
+                    <p>Strategic planning to protect and grow your assets across market cycles, ensuring your family's financial security for generations to come.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Investment Consultation</h3>
+                    <p>Personalized investment advice aligned with your financial goals, risk tolerance, and long-term wealth objectives.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Quality Section -->
-    <section id="quality">
-        <div class="quality-container">
-            <div class="quality-image">
-                <img src="https://images.pexels.com/photos/5912127/pexels-photo-5912127.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Quality Control Laboratory">
-            </div>
-            <div class="quality-content">
-                <h2>Quality Assurance</h2>
-                <p>Quality is the foundation of everything we do at JOVIKA FOODS. Our manufacturing facility follows international food safety standards including proper hygiene protocols, regular equipment maintenance, and comprehensive quality testing at every production stage. We source our raw materials from trusted suppliers, conduct thorough inspections, and maintain strict temperature and storage controls. Our team is trained in food safety practices and HACCP principles to ensure every product meets our high standards before reaching your table. When you choose JOVIKA FOODS, you're choosing products manufactured with integrity, care, and unwavering commitment to excellence.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
     <section id="contact">
-        <div class="contact-container">
+        <div class="container">
             <h2>Contact Us</h2>
-            <p>Ready to experience the JOVIKA FOODS difference? Whether you're a retailer looking for quality products, a business seeking manufacturing partnership, or a customer wanting to learn more about our offerings, we're here to help. Visit our facility in Makurdi or reach out through any of our contact channels. Our team is ready to discuss your needs, answer your questions, and show you why JOVIKA FOODS is the right choice for quality food manufacturing in Nigeria.</p>
-            <div class="contact-details">
-                <div class="contact-item">
-                    <strong>Phone:</strong> <a href="tel:+2348165824971">+234 816 582 4971</a>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Visit Our Office</h3>
+                        <p>C34/35 Hudco Quarters North Bank<br>Makurdi, Benue State, Nigeria</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Call Us</h3>
+                        <p><a href="tel:+2348165824971">+234 816 582 4971</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:info@wmlogic.org">info@wmlogic.org</a></p>
+                    </div>
                 </div>
                 <div class="contact-item">
-                    <strong>Email:</strong> <a href="mailto:info@jovikafoods.com">info@jovikafoods.com</a>
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
+                    Saturday: 9:00 AM - 2:00 PM<br>
+                    Sunday: Closed</p>
                 </div>
-                <div class="contact-item">
-                    <strong>Address:</strong> C34/35 Hudco Quarters North Bank, Makurdi, Benue State, Nigeria
+                <p style="margin: 2rem 0;">For immediate assistance, reach us via WhatsApp. We respond promptly to all inquiries regarding foreign exchange rates, wealth management consultations, and family office services.</p>
+                <div class="features-list">
+                    <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--color-accent);">Why Choose WM Logic Family Office?</h3>
+                    <p>✓ Licensed and regulated bureau de change operator</p>
+                    <p>✓ Competitive foreign exchange rates</p>
+                    <p>✓ Personalized wealth management approach</p>
+                    <p>✓ Transparent and secure transactions</p>
+                    <p>✓ Deep expertise in Nigerian and international markets</p>
+                    <p>✓ Convenient Makurdi location</p>
                 </div>
-            </div>
-            <div class="contact-buttons">
-                <a href="tel:+2348165824971" class="contact-btn primary">Call Us</a>
-                <a href="https://wa.me/2348165824971" class="contact-btn whatsapp" target="_blank">WhatsApp</a>
+                <p style="margin-top: 2rem; font-size: 1.1rem;">Schedule your confidential consultation today and discover how we can help secure your financial future.</p>
             </div>
         </div>
     </section>
 
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/2348165824971" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    <a href="https://wa.me/2348165824971" class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp">
+        <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.281 4.65C24.318 1.686 20.363 0.053 16.144 0.049C7.372 0.049 0.23 7.187 0.227 15.964C0.226 18.788 0.963 21.543 2.365 23.973L0.098 32L8.335 29.771C10.675 31.048 13.319 31.723 16.011 31.724H16.018C24.788 31.724 31.931 24.586 31.934 15.809C31.936 11.594 30.244 7.614 27.281 4.65ZM16.144 29.082H16.138C13.721 29.081 11.352 28.433 9.298 27.209L8.803 26.915L3.821 28.193L5.12 23.345L4.799 22.829C3.446 20.693 2.732 18.257 2.733 15.765C2.735 8.562 8.538 2.691 16.15 2.691C19.852 2.693 23.345 4.133 25.966 6.756C28.587 9.38 30.025 12.875 30.024 16.579C30.021 23.782 24.218 29.082 16.144 29.082ZM24.186 19.574C23.787 19.375 21.816 18.404 21.446 18.266C21.076 18.128 20.804 18.059 20.532 18.458C20.26 18.857 19.49 19.772 19.246 20.044C19.002 20.316 18.758 20.346 18.359 20.147C17.96 19.948 16.678 19.525 15.142 18.141C13.943 17.064 13.125 15.737 12.881 15.338C12.637 14.939 12.856 14.712 13.055 14.514C13.236 14.333 13.454 14.047 13.653 13.803C13.852 13.559 13.921 13.375 14.059 13.103C14.197 12.831 14.128 12.587 14.029 12.388C13.93 12.189 13.115 10.216 12.773 9.418C12.439 8.643 12.1 8.751 11.849 8.739C11.608 8.728 11.336 8.726 11.064 8.726C10.792 8.726 10.363 8.825 9.993 9.224C9.623 9.623 8.593 10.594 8.593 12.567C8.593 14.54 10.023 16.451 10.222 16.723C10.421 16.995 13.123 21.211 17.281 22.954C18.255 23.379 19.017 23.636 19.614 23.829C20.596 24.133 21.49 24.089 22.198 23.988C22.989 23.875 24.575 23.014 24.917 22.067C25.259 21.12 25.259 20.316 25.16 20.147C25.061 19.978 24.585 19.773 24.186 19.574Z" fill="white"/>
         </svg>
     </a>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 JOVIKA FOODS. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 WM Logic Family Office Limited. All rights reserved.</p>
+        </div>
     </footer>
 
     <script>
